@@ -110,19 +110,60 @@ body {
   article {
     position: relative;
     display: block;
+    box-sizing: border-box;
     min-height: 100vh;
     padding: 200px;
 
     color: white;
     background: rgb(44, 114, 154);
-
-    text-align: justify;
-    text-justify: inter-word;
-    line-height: 1.4em;
   }
 
     article h2 {
+      text-align: justify;
+      text-justify: inter-word;
+      line-height: 1em;
       margin-bottom: 1em;
+    }
+
+    article .grid_container {
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 50px;
+    }
+
+    article input[type=text], select {
+      display: inline-block;
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0px;
+      
+      border: 1px solid white;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    article button {
+      display: inline-block;
+      align-self: end;
+      
+      padding: 8px 28px;
+      border: none;
+      
+      color: white;
+      background-color: rgb(40, 151, 44);
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    article button:hover {
+      color: white;
+      background-color: rgba(28, 78, 32, 0.8);
+      box-shadow: 0em 0em 2em 0em rgba(0,0,0,0.3);
+    }
+
+    article #afeman {
+      position: relative;
+      max-width: 200px;
     }
 
 
