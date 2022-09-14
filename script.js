@@ -1,4 +1,4 @@
-
+// Define Scroll Elements
 let scroll_bg = document.getElementById("scroll_bg");
 let scroll_logo = document.getElementById("scroll_logo");
 let scroll_aircraft = document.getElementById("scroll_aircraft");
@@ -7,6 +7,23 @@ let scroll_bldg2 = document.getElementById("scroll_bldg2");
 let scroll_mid = document.getElementById("scroll_mid");
 let scroll_water = document.getElementById("scroll_water");
 let scroll_clouds = document.getElementById("scroll_clouds");
+
+// Pop up function
+function submitButton() {
+  let x = document.getElementById("user_input").value;
+
+  // If input is empty
+  if (isNaN(x)) {
+    x = "Please Enter an Input...";
+    alert(x);
+  } else {
+    alert(x);
+  }
+
+
+  /* var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show") */
+}
 
 window.addEventListener("scroll", function() {
   let scrollPos = window.scrollY;

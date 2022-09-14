@@ -46,13 +46,18 @@
         <article>
             <h2>SOFTWARE ENGINEERING CHALLENGE</h2>
             <div class="grid_container">
-                <div class="grid_item">
-                    <form action="/action_page.php">
-                        <label for="form_input"></label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <div class="grid_form">
+                    <form action="./input_page.php">
+                        <label for="user_input">Input to be Submitted:</label>
+                        <input type="text" id="user_input" name="input_text" placeholder="Type Your Input Here..">
+                        <button type="submit" onclick="submitForm()">Submit</button>
                     </form>
                 </div>
+                <div class="grid_picture">
+                    <img src="./images/afeman.png" id="afeman">
+                </div>
             </div>
+            <div class="popup" onclick="myFunction()"
         </article>
     </section>
 
