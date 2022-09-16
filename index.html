@@ -34,7 +34,7 @@
     <section id="sect_scroll">
         <img src="./images/scroll_background.PNG" id="scroll_bg">
         <img src="./images/scroll_clouds.png" id="scroll_clouds">
-        <img src="./images/scroll_logo_raid.PNG" id="scroll_logo">
+        <img src="./images/scroll_logo_raid.png" id="scroll_logo">
         <img src="./images/scroll_aircraft.png" id="scroll_aircraft">
         <img src="./images/scroll_building1.png" id="scroll_bldg1">
         <img src="./images/scroll_building2.png" id="scroll_bldg2">
@@ -48,8 +48,14 @@
             <div class="grid_container">
                 <div class="grid_form">
                     <form action="./input_page.php">
-                        <label for="user_input">Input to be Submitted:</label>
-                        <input type="text" id="user_input" name="input_text" placeholder="Type Your Input Here..">
+                        <label for="user_name">Name:</label>
+                        <input type="text" id="user_name" name="input_name" placeholder="Your Name Here...">
+                        
+                        <label for="user_email">Email:</label>
+                        <input type="text" id="user_email" name="input_email" placeholder="Your Email Here...">
+
+                        <label for="user_text">Input to be Submitted:</label>
+                        <input type="text" id="user_text" name="input_text" placeholder="Your Input Here...">
                         <button type="submit" onclick="submitForm()">Submit</button>
                     </form>
                 </div>
