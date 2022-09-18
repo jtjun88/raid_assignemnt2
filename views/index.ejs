@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAiD Software Assignment</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="https://www.mindef.gov.sg/web/portal/rsaf/home/">
+            <img src="/_images/logo_rsaf_white.png" alt="RSAF logo" id="header_rsaf">
+        </a>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/junjunjansent">
+                    <p class="header_name">JANSEN
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </p>
+                </a>
+            </li>
+            <li><a href="#sect_form">
+                    <p class="header_name">FORM</p>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <section id="sect_scroll">
+        <img src="/_images/scroll_background.png" id="scroll_bg">
+        <img src="/_images/scroll_clouds.png" id="scroll_clouds">
+        <img src="/_images/scroll_logo_raid.png" id="scroll_logo">
+        <img src="/_images/scroll_aircraft.png" id="scroll_aircraft">
+        <img src="/_images/scroll_building1.png" id="scroll_bldg1">
+        <img src="/_images/scroll_building2.png" id="scroll_bldg2">
+        <img src="/_images/scroll_mid.png" id="scroll_mid">
+        <img src="/_images/scroll_fore.png" id="scroll_water">
+    </section>
+
+    <section id="sect_form">
+        <article>
+            <h2>SOFTWARE ENGINEERING CHALLENGE</h2>
+            <div class="grid_container">
+                <div class="grid_form">
+                    <form action="/" method="POST" id="user_form">
+                        <label for="user_name">Name:</label>
+                        <input required type="text" id="user_name" name="input_name" placeholder="Your Name Here...">
+                        
+                        <label for="user_email">Email:</label>
+                        <input required type="text" id="user_email" name="input_email" placeholder="Your Email Here...">
+
+                        <label for="user_subject">Email Subject:</label>
+                        <input required type="text" id="user_subject" name="input_subject" placeholder="Your Subject Here...">
+
+                        <label for="user_text">Input to be Submitted:</label>
+                        <input required type="text" id="user_text" name="input_text" placeholder="Your Input Here...">
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div class="popup">
+                        <h2>THANK YOU FOR SUBMITTING</h2>
+                        <p>Submitted Details: </p>
+                            <ol>
+                                <li><p id="saved_name"></p></li>
+                                <li><p id="saved_email"></p></li>
+                                <li><p id="saved_subject"></p></li>
+                                <li><p id="saved_text"></p></li>
+                            </ol>
+                        <button type="button" onclick="popupClose()">OK</button>
+                    </div>
+                </div>
+                <div class="grid_picture">
+                    <img src="/_images/afeman.png" id="afeman">
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
