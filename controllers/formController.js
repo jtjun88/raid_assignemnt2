@@ -40,7 +40,6 @@ module.exports = function(app){
             if (err) throw err;
             console.log('Input is saved.');
         });
-        res.end();
     });
 };
 
