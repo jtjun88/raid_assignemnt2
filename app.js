@@ -16,4 +16,5 @@ app.use(express.json());                    // to read json files in request
 formController(app);
 
 // port listener
-app.listen(3000);
+const port = process.env.PORT || 3000;
+app.listen(port);
